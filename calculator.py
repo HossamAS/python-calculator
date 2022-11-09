@@ -101,9 +101,9 @@ while 1:
             x[0] =int(x[0])
             x[1] =int(x[1])
             if operator=="logical_and":
-              print(x[0] and x[1])
+              print(bool(x[0] and x[1]))
             elif  operator=="logical_or":
-              print(x[0] or x[1])
+              print(bool(x[0] or x[1]))
             elif  operator=="bitwise_and":
               print(x[0]&x[1])
             elif  operator=="bitwise_or":
@@ -115,7 +115,7 @@ while 1:
         elif  operator=="logical_not" or operator=="bitwise_not" or       operator=="hexadecimal_to_binary" or operator=="hexadecimal_to_decimal"       or operator=="hexadecimal_to_octal" or operator=="hexadecimal_to_all_systems"       or operator=="decimal_to_binary"or operator=="decimal_to_hexadecimal" or        operator=="decimal_to_octal" or operator=="decimal_to_all_systems" or        operator=="octal_to_binary"or operator=="octal_to_hexadecimal" or        operator=="octal_to_decimal" or operator=="octal_to_all_systems" or         operator=="binary_to_hexadecimal"or operator=="binary_to_decimal"or          operator=="binary_to_octal"or operator=="binary_to_all_systems":
             x=input("Enter one Value : ") 
             if operator=="logical_not":
-              print(not int(x))
+              print(bool(not int(x)))
             elif  operator=="bitwise_not":
               print(~int(x))
             elif  operator=="hexadecimal_to_binary":
